@@ -67,15 +67,15 @@ nav {
 }
 
 .input-lbl {
-  @apply input input-bordered p-2 rounded-md border-slate-400 text-black
+  @apply input input-bordered p-2 rounded-md border-slate-400 text-black bg-slate-100
 }
 
 .textarea-lbl {
-  @apply textarea textarea-bordered p-2 rounded-md border-slate-400
+  @apply textarea textarea-bordered p-2 rounded-md border-slate-400 bg-slate-100
 }
 
 .select-lbl {
-  @apply select select-bordered pl-2 rounded-md border-slate-400
+  @apply select select-bordered pl-2 rounded-md border-slate-400 bg-slate-100
 }
 
 // Sign-up & Log-in ///////////////////////////////////////////////////////////////////////
