@@ -20,13 +20,13 @@ export class TimerComponent implements OnInit {
     seconds: 0,
   };
 
-  constructor(private announceService: AnnouncesService) {}
+  constructor(private announceService: AnnouncesService) { }
 
   ngOnInit(): void {
     this.timer$ = this.createTimerObservable(this.endDate).subscribe(
       async (v: number) => {
         if (v <= 0) {
-         await this.announceService.getWinnerTicket(this.announceId);
+          await this.announceService.getWinnerTicket(this.announceId);
           this.timer$.unsubscribe();
         } else {
           this.timeDiff$.next(v);
