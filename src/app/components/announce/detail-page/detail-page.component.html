@@ -34,7 +34,7 @@
         </div>
         <div class="divider bg-white h-0.5 mt-8"></div>
         <!-- Description -->
-        <div>
+        <div class="flex flex-col">
           <h3 class="card-title mb-2">Description:</h3>
           <p class="leading-normal">
             {{ currentAnnounce.description }}
@@ -82,7 +82,7 @@
       <!-- User -->
       <div *ngIf="authorAnnounce" class="announce-user-stats-container">
         <div class="announce-user-profile">
-          <img class="w-24 mask mask-squircle" [src]="authorAnnounce.imgProfile" />
+          <img *ngIf="authorAnnounce.imgProfile" class="w-24 mask mask-squircle" [src]="authorAnnounce.imgProfile" />
           <div class="announce-user-info">
             <p class="self-center font-bold text-xl">
               {{ authorAnnounce.firstname }}
@@ -99,7 +99,7 @@
           </div>
         </div>
         <!-- User CTA { MOBILE }  -->
-        <div class="btn-group flex justify-center gap-0.5 | md:hidden">
+        <div class="flex justify-center self-center gap-0.5 | md:hidden">
           <button class="ml-auto btn btn-primary btn-sm btn-outline bg-slate-50">
             Contacter
           </button>
@@ -108,7 +108,7 @@
           </label>
         </div>
         <!-- User CTA { DESKTOP }  -->
-        <div class="hidden | md:btn-group md:flex md:justify-center gap-0.5">
+        <div class="hidden | md:self-center md:flex md:justify-center gap-0.5">
           <button class="ml-auto btn btn-primary btn-sm btn-outline bg-slate-50">
             Contacter
           </button>

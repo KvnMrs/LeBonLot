@@ -62,7 +62,6 @@ export class AuthService {
     try {
       await signInWithEmailAndPassword(this.auth, data.email, data.password);
       this.router.navigate(['/recherche']);
-      return null;
     } catch (error: any) {
       const errorCode = error.code;
       let errorMessage = error.message;

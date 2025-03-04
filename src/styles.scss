@@ -67,15 +67,15 @@ nav {
 }
 
 .input-lbl {
-  @apply input input-bordered p-2 rounded-md border-slate-400 text-black bg-slate-100
+  @apply input input-bordered p-2 rounded-md border-slate-400 text-white
 }
 
 .textarea-lbl {
-  @apply textarea textarea-bordered p-2 rounded-md border-slate-400 bg-slate-100
+  @apply textarea textarea-bordered p-2 rounded-md border-slate-400 text-white
 }
 
 .select-lbl {
-  @apply select select-bordered pl-2 rounded-md border-slate-400 bg-slate-100
+  @apply select select-bordered pl-2 rounded-md border-slate-400 text-white
 }
 
 // Sign-up & Log-in ///////////////////////////////////////////////////////////////////////
@@ -107,7 +107,7 @@ nav {
 // Announce-details page ///////////////////////////////////////////////////////////////////////
 
 .details-container-1 {
-  @apply py-4 mx-auto flex flex-col gap-4 justify-center
+  @apply w-11/12 py-4 mx-auto flex flex-col gap-4 justify-center
   /* SM */
   sm:w-10/12 sm:mb-6 sm:py-6
   /* MD */

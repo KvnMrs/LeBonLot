@@ -11,7 +11,7 @@
         </div>
         <div class="form-input-container">
           <label class="mb-1 text-white" for="category">Catégorie:</label>
-          <select class="select-lbl" id="category" name="category" formControlName="category">
+          <select class="select-lbl text-black" id="category" name="category" formControlName="category">
             <option value="" selected hidden>Catégorie</option>
             <option *ngFor="let category of announceCategories" [value]="category">
               {{ category }}
@@ -48,7 +48,7 @@
         <div class="md:w-full mt-0 mb-8">
           <div class="form-input-container">
             <label class="mb-1 text-white" for="endDate">Date du tirage:</label>
-            <input class="input input-lbl" type="date" id="endDate" name="endDate" formControlName="endDate" required />
+            <input class="input input-lbl text-black" type="date" id="endDate" name="endDate" formControlName="endDate" required />
           </div>
           <div class="form-input-container">
             <label class="mb-1 text-white" for="endHour">Heure du tirage:</label>
